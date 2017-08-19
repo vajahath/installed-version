@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Get version of your app",
     "main": "dist/index.js",
+    "typings": "index.d.ts",
     "scripts": {
         "prepublishOnly": "echo 'Executing pre-publish stuffs..' && npm run lint && npm run build",
         "build": "npm run clean-build && npm run lint && tsc && npm run copy-json",
