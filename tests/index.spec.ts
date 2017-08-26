@@ -9,7 +9,8 @@ describe('Testing installed version', () => {
 	it('returns current version of this package', done => {
 		const v = version();
 		expect(v).not.to.be.undefined;
-		expect(v).to.equal('1.0.0');
+		expect(v).to.be.string;
+		expect(v).not.to.equal('');
 		done();
 	});
 });
